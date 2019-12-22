@@ -1,1 +1,3 @@
-Table 10.5 
+Table 10-5.  Some Important Functions in the fileinput Module
+   The correct is 
+   Table 10-5.  Some Important Functions in the heapq Module
