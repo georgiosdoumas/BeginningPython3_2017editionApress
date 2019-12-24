@@ -1,9 +1,9 @@
 #!/usr/local/bin/python3 
 # page 221 My implementation of database.py with enhancements for handling some exceptions
 import sys, shelve, os
-db_store_file = '/home/gdoumas/Documents/ProgrammingOther/PYTHONbooks/Beginning.Python.3rdEd.2017/ch10/persons.dat'
+db_store_file = '/home/yourusrename/Documents/PYTHONbooks/Beginning.Python.3rdEd.2017/ch10/persons.dat'
 
-def IDexists(pid, pdb):
+def IDexists(pid, pdb):  # test if a ID already exists in the database
     try:
         info = pdb[pid]
         return True
