@@ -34,15 +34,13 @@ def lookup_person(db):
         info = db[pid]
         field = input('What would you like to know? (name, age, phone, all) ')
         field = field.strip().lower()
-        if field == 'all':
-            print(info)
-        else:
-            try:
-                info = db[pid][field]
-                print(field.capitalize() + ':', db[pid][field])
-            except KeyError:
+        try:
+            info = db[pid][field]
+            print(field.capitalize() + ':', db[pid][field])
+        except KeyError:
+            if field != 'all':    # user typed something strange, give him a message about it, and the whole info
                 print(field, " is not a recognized field of information. Printing all fields of ",pid, ":")
-                print(info)
+            print(info)           # if user typed 'all', of course we again print the whole info 
     except KeyError:
         print("The ID you gave ", pid, " does not exists in the database of persons!")
     
