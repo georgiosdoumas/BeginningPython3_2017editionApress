@@ -11,7 +11,7 @@ def process(inpstring, comment_char = '#', value_seperator = ','):
     value = value.strip()
     print(name, ':', value)
 
-filesharp = 'page250.txt'
+filesharp = 'page250config_file.conf'
 filesemicol = 'page250b.txt'
 try:
     with open(filesharp) as f:
