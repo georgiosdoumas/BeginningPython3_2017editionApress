@@ -1,0 +1,5 @@
+;; some header comment
+;;
+Name1 = Value1  ;; this is for variable x
+  Name2 =   Value2  ; for yy
+Name3 =Value3;for zz, notice the lack of space before the comment
