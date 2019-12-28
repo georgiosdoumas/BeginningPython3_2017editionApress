@@ -20,3 +20,5 @@ except Exception as setuper:
     print(" Could not start server, due to :", setuper)
 except KeyboardInterrupt:
     print("Server was stopped by a Ctrl+C. Exiting program")
+    #socket_server.server_close()  # I am not sure if this is preferable
+    socket_server.shutdown()
