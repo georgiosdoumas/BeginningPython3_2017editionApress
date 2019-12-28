@@ -22,3 +22,5 @@ except Exception as setuper:
     print(" Could not start forking server, due to :", setuper)
 except KeyboardInterrupt:
     print("Server was stopped by a Ctrl+C. Exiting program")
+    socket_server.server_close()  
+    socket_server.shutdown()     # maybe both?
